@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: jdcc:h2:mem:sdw2025
+    url: jdbc:h2:mem:sdw2025
     username: sdw2025
     password:
   jpa:

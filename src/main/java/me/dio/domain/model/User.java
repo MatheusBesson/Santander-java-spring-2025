@@ -26,8 +26,11 @@ public class User {
     @OneToOne(cascade = CascadeType.ALL)
     private Card card;
 
-    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER) // fetch =eager (return its features list every time a user is searched)
+    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    // fetch =eager (return its features list every time a user is searched)
     private List<Feature> features;
+
+    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     private List<News> news;
 
 
