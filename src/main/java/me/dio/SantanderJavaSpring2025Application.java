@@ -1,4 +1,4 @@
-package me.dio.Santander_java_spring_2025;
+package me.dio;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
