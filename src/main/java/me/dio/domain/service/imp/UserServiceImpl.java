@@ -24,12 +24,9 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public User create(User userToCreate) {
-        if (userToCreate.getId() == null) {
-            throw new NullPointerException("[ERROR] User ID is invalid!");
-        }
         if (userRepository.existsByAccountNumber(userToCreate.getAccount().getNumber())) {
             throw new IllegalArgumentException("This Account number already exists");
         }
-        return ;
+        return userRepository.save(userToCreate);
     }
 }
